@@ -37,28 +37,12 @@ public class InteractionsWithButtons {
         waiter(5000);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         // Ejecucion de lo que estamos realizando, instrucciones, y etc.
         driver.close();
         driver.quit();
 
 
     }
-
-
 
 
     public static void waiter(int pSeconds) {

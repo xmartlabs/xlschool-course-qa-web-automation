@@ -86,17 +86,6 @@ public class InteractionsWithInputs {
         }
 
 
-
-
-
-
-
-
-
-
-
-
-
         // Ejecucion de lo que estamos realizando, instrucciones, y etc.
         driver.close();
         driver.quit();
