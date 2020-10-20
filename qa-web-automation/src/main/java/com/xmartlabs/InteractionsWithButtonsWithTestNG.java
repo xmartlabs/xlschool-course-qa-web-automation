@@ -38,7 +38,7 @@ public class InteractionsWithButtonsWithTestNG {
     public void dropDownTest(){
 
         System.out.println("Mensage que se ejecuta luego de cada test");
-        
+
         System.out.println("Este texto se escribe desde el AfterMethod.");
     }
 
@@ -67,11 +67,15 @@ public class InteractionsWithButtonsWithTestNG {
         //Comenzamos con la interacción con el radiobutton YES
         WebElement radioButtonYes = driver.findElement(By.xpath("//*[@id='app']/div/div/div[2]/div[2]/div[1]/div[2]/label"));
         if (radioButtonYes.isSelected() == true){
-            System.out.println("El radio YES esta deseleccionado");
-            System.out.println("Este texto se escribe desde el Primer test.");
-            radioButtonYes.click();
+            System.out.println("Se cumple la condicion!");
+            System.out.println("El radio YES esta seleccionado");
+            System.out.println("");
+            System.out.println("Este texto se escribe desde el PRIMER test.");
         }else{
-            System.out.println("El radio YES esta seleccionad, lo cual esta MAL");
+            System.out.println("NO Se cumple la condicion!");
+            System.out.println("El radio YES esta deseleccionado.");
+            System.out.println("");
+            System.out.println("Este texto se escribe desde el PRIMER test.");
         }
         waiter(5000);
     }
@@ -90,11 +94,16 @@ public class InteractionsWithButtonsWithTestNG {
         //Comenzamos con la interacción con el radiobutton YES
         WebElement radioButtonYes = driver.findElement(By.xpath("//*[@id='app']/div/div/div[2]/div[2]/div[1]/div[2]/label"));
         if (radioButtonYes.isSelected() == true){
+            System.out.println("Se cumple la condicion!");
             System.out.println("El radio YES esta seleccionado");
-            System.out.println("Este texto se escribe desde el segundo test.");
+            System.out.println("");
+            System.out.println("Este texto se escribe desde el SEGUNDO test.");
             radioButtonYes.click();
         }else{
-            System.out.println("El radio YES esta seleccionad, lo cual esta MAL");
+            System.out.println("NO Se cumple la condicion!");
+            System.out.println("El radio YES esta deseleccionado.");
+            System.out.println("");
+            System.out.println("Este texto se escribe desde el SEGUNDO test.");
         }
         waiter(5000);
     }
